@@ -172,7 +172,7 @@
             the form below or connect with me on social media.
           </p>
         </div>
-        <form action="submit" class="contact-form">
+        <form id="contactForm" class="contact-form">
           <div class="input-group-row">
             <div class="input-wrapper">
               <label for="name">Enter your name</label>
@@ -203,9 +203,26 @@
             ></textarea>
           </div>
 
-          <button type="submit" class="submit-button">Send Message</button>
+          <button
+            type="submit"
+            onclick="submitForm(event)"
+            class="submit-button"
+          >
+            Send Message
+          </button>
         </form>
       </section>
     </main>
+    <script>
+      function submitForm(event) {
+        event.preventDefault();
+
+        document.getElementById("contactForm").reset();
+
+        alert("Thank you for your message! Your form has been submitted.");
+
+        console.log("Form submitted and reset successfully");
+      }
+    </script>
   </body>
 </html>
