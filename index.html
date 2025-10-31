@@ -46,8 +46,8 @@
         </div>
 
         <!-- Biography Section -->
+        <h1>BIOGRAPHY</h1>
         <section class="biography-section" id="biography">
-          <h1>BIOGRAPHY</h1>
           <p>Name: Manasseh Elias Anche</p>
           <p>Date of Birth: 20th December, 1997</p>
           <p>State of Origin: Kaduna State</p>
@@ -161,23 +161,51 @@
             </div>
           </div>
         </section>
-
-        <section class="form-section" id="contact">
-          <form>
-            <input type="text" class="text" placeholder="Write Text" />
-            <input type="email" class="email" placeholder="Input email" />
-            <input
-              type="phone"
-              class="number"
-              placeholder="Insert Phone Number"
-            />
-          </form>
-          <textarea class="text-area" name="contact-me" id="contact">
-              For enquries and for any of my services, please do well to contact me by filling the form above
-            </textarea
-          >
-        </section>
       </div>
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+        <div class="contact-intro">
+          <h2>Contact Me</h2>
+          <p>
+            I am always open to new opportunities and collaborations, dedicated
+            to bringing your imaginations to life. Get in touch with me using
+            the form below or connect with me on social media.
+          </p>
+        </div>
+        <form action="submit" class="contact-form">
+          <div class="input-group-row">
+            <div class="input-wrapper">
+              <label for="name">Enter your name</label>
+              <input
+                type="text"
+                id="name"
+                name="user_name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="email">Enter your email</label>
+              <input
+                type="text"
+                id="name"
+                name="user_email"
+                placeholder="Enter your email"
+              />
+            </div>
+          </div>
+          <div class="textarea-wrapper">
+            <label for="message">Your message</label>
+            <textarea
+              id="message"
+              name="user_message"
+              rows="5"
+              placeholder="Write your message here"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+      </section>
     </main>
   </body>
 </html>
