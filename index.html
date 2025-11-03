@@ -181,6 +181,7 @@
                 id="name"
                 name="user_name"
                 placeholder="Enter your name"
+                required
               />
             </div>
             <div class="input-wrapper">
@@ -190,6 +191,7 @@
                 id="name"
                 name="user_email"
                 placeholder="Enter your email"
+                required
               />
             </div>
           </div>
@@ -200,16 +202,11 @@
               name="user_message"
               rows="5"
               placeholder="Write your message here"
+              required
             ></textarea>
           </div>
 
-          <button
-            type="submit"
-            onclick="submitForm(event)"
-            class="submit-button"
-          >
-            Send Message
-          </button>
+          <button type="submit" class="submit-button">Send Message</button>
         </form>
       </section>
     </main>
