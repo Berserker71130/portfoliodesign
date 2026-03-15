@@ -1,3 +1,4 @@
+html
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,7 +8,6 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- HEADER -->
     <header class="header">
       <div class="navbar">
         <div class="logo">Manasseh Elias Anche <span>PORTFOLIO</span></div>
@@ -28,11 +28,10 @@
           Frontend Developer building clean, responsive web interfaces
         </h1>
         <br />
-        <span style="color: #60a5fa"
-          >Specializing in React.js, Next.js and API-driven applications</span
+        <span class="sub-tagline"
+          >Specializing in React.js and API-driven applications</span
         >
 
-        <!-- PROFILE CARD -->
         <div class="profile-card">
           <div class="profile-image-container">
             <img
@@ -50,7 +49,6 @@
           </div>
         </div>
 
-        <!-- BIOGRAPHY -->
         <section id="biography">
           <h2>ABOUT ME</h2>
           <p>
@@ -68,7 +66,6 @@
           </p>
         </section>
 
-        <!-- EDUCATION -->
         <section id="education">
           <h2>EDUCATION</h2>
           <ul>
@@ -84,12 +81,11 @@
           </ul>
         </section>
 
-        <!-- CAREER -->
         <section id="career">
           <h2>CAREER</h2>
           <ul>
             <li>
-              <strong>Junior Frontend Developer</strong> — React.js, Next.Js,
+              <strong>Junior Frontend Developer</strong> — React.js, Next.js,
               REST APIs, Responsive Web Design
             </li>
             <li>
@@ -99,31 +95,28 @@
           </ul>
         </section>
 
-        <!-- SKILLS (NEW SECTION) -->
         <section id="skills">
           <h2>SKILLS</h2>
           <ul>
             <li>HTML5, CSS3, JavaScript (ES6+)</li>
-            <li>React.Js, Next.Js, Tailwind CSS</li>
+            <li>React.js, Next.js, TailwindCSS</li>
             <li>REST APIs & asynchronous data handling</li>
             <li>Responsive and mobile-first design</li>
             <li>Git & GitHub version control</li>
           </ul>
         </section>
 
-        <!-- PROJECTS -->
         <section id="projects">
           <h2>PROJECTS</h2>
           <div class="project-section">
             <div class="project">
               <h3>Bead Luxe Luxury App</h3>
               <p>
-                Developed a shopping application that manages product sales,
-                tracks transactions, and maintains customer records for
-                efficient store management.
+                Built a shopping app that manages sales and records, keeping
+                customer records and management
               </p>
-              <p><strong>Tech Used:</strong> Next.js, Zustand, Tailwind CSS</p>
-              <p>
+              <p><strong>Tech Used:</strong> Next.js, Zustand, TailwindCSS</p>
+              <div class="project-links">
                 <a href="https://bead-luxe.vercel.app" target="_blank"
                   >Live Demo</a
                 >
@@ -133,17 +126,17 @@
                   target="_blank"
                   >GitHub Repo</a
                 >
-              </p>
+              </div>
             </div>
 
             <div class="project">
               <h3>E-commerce Page</h3>
               <p>
                 Developed a modular e-commerce interface with responsive state
-                management for a smooth shopping experience.
+                management.
               </p>
               <p><strong>Tech Used:</strong> React.js, TailwindCSS</p>
-              <p>
+              <div class="project-links">
                 <a href="https://ecommerce-jztm.vercel.app" target="_blank"
                   >Live Demo</a
                 >
@@ -153,19 +146,19 @@
                   target="_blank"
                   >GitHub Repo</a
                 >
-              </p>
+              </div>
             </div>
 
             <div class="project">
               <h3>Weather Application</h3>
               <p>
-                Integrated public APIs to fetch weather data dynamically and
-                display real-time updates with responsive UI design.
+                Integrated public APIs to fetch weather data dynamically with
+                real-time updates.
               </p>
               <p>
                 <strong>Tech Used:</strong> React.js, TailwindCSS, Fetch API
               </p>
-              <p>
+              <div class="project-links">
                 <a href="https://velocity-smoky-pi.vercel.app" target="_blank"
                   >Live Demo</a
                 >
@@ -175,20 +168,19 @@
                   target="_blank"
                   >GitHub Repo</a
                 >
-              </p>
+              </div>
             </div>
 
             <div class="project">
               <h3>PayWallet App</h3>
               <p>
                 Built a digital wallet interface with real-time currency updates
-                and conversion functionality for accurate financial
-                transactions.
+                and conversion.
               </p>
               <p>
                 <strong>Tech Used:</strong> React.js, Context API, TailwindCSS
               </p>
-              <p>
+              <div class="project-links">
                 <a href="https://paywallet-app1.vercel.app" target="_blank"
                   >Live Demo</a
                 >
@@ -198,97 +190,40 @@
                   target="_blank"
                   >GitHub Repo</a
                 >
-              </p>
+              </div>
             </div>
           </div>
         </section>
 
-        <!-- CONTACT -->
-        <section id="contact" style="padding: 40px 0; text-align: center">
-          <h2 style="font-size: 2.5rem; margin-bottom: 20px">
-            Let's Build Something Great
-          </h2>
-          <p style="font-size: 1.2rem; margin-bottom: 30px; color: #cbd5e1">
+        <section id="contact" class="contact-section">
+          <h2>Let's Build Something Great</h2>
+          <p class="contact-text">
             I am open to global opportunities and technical collaborations.
           </p>
-
-          <p
-            style="
-              font-family: &quot;Courier New&quot;, Courier, monospace;
-              font-size: 1.1rem;
-              color: #60a5fa;
-              margin-bottom: 30px;
-            "
-          >
-            anchemanasseh@gmail.com
-          </p>
-          <div
-            class="contact-links"
-            style="display: flex; justify-content: center; gap: 20px"
-          >
-            <a
-              href="mailto:anchemanasseh@gmail.com"
-              class="btn"
-              style="
-                padding: 12px 24px;
-                background-color: #3b82f6;
-                color: white;
-                border-radius: 8px;
-                text-decoration: none;
-              "
-              onmouseover="this.style.backgroundColor = '#00008B'"
-              onmouseout="this.style.backgroundColor = '#3b82f6'"
+          <p class="email-text">anchemanasseh@gmail.com</p>
+          <div class="contact-links">
+            <a href="mailto:anchemanasseh@gmail.com" class="btn btn-primary"
               >Send Email</a
             >
             <a
               href="https://linkedin.com/in/manasseh-anche-a40840380"
-              class="btn"
-              style="
-                padding: 12px 24px;
-                border: 2px solid #3b82f6;
-                color: #3b82f6;
-                border-radius: 8px;
-                text-decoration: none;
-              "
-              onmouseover="
-                this.style.color = '#00008B';
-                this.style.borderColor = '#00008B';
-              "
-              onmouseout="
-                this.style.color = '#3b82f6';
-                this.style.borderColor = '#3b82f6';
-              "
-            >
+              target="_blank"
+              class="btn btn-outline"
               >Connect On LinkedIn</a
             >
             <a
-              href="https://github.com/Berserker71130"
-              class="btn"
-              style="
-                padding: 12px 24px;
-                border: 2px solid #3b82f6;
-                color: #3b82f6;
-                border-radius: 8px;
-                text-decoration: none;
-              "
-              onmouseover="
-                this.style.color = '#00008B';
-                this.style.borderColor = '#00008B';
-              "
-              onmouseout="
-                this.style.color = '#3b82f6';
-                this.style.borderColor = '#3b82f6';
-              "
-              >View On GitHub</a
+              href="https://portfoliodesign-one.vercel.app"
+              target="_blank"
+              class="btn btn-outline"
+              >View Portfolio</a
             >
           </div>
         </section>
       </div>
     </main>
 
-    <!-- FOOTER -->
     <footer>
-      <p>&copy; Manasseh Anche. All rights reserved.</p>
+      <p>&copy; 2026 Manasseh Anche. All rights reserved.</p>
     </footer>
   </body>
 </html>
