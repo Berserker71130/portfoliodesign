@@ -52,7 +52,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 70px;
-  background-color: rgba(46, 80, 51, 0.8);
+  background-color: rgba(46, 80, 51, 0.5);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 1000;
