@@ -327,3 +327,93 @@ footer {
     display: none;
   } /* Mobile menu could be added here */
 }
+/*==============================
+  LUSH ANIMATIONS (NEW)
+===============================*/
+
+/* 1. Profile Card Floating Effect */
+.profile-card {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* 2. Profile Image Breathing Glow */
+.profile-image {
+  box-shadow: 0 0 0 0 rgba(139, 195, 74, 0.4);
+  animation: pulse-glow 3s infinite;
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(139, 195, 74, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(139, 195, 74, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(139, 195, 74, 0);
+  }
+}
+
+/* 3. Hero Text Reveal (On Page Load) */
+.tagline,
+.sub-tagline {
+  animation: revealUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  opacity: 0;
+}
+
+.sub-tagline {
+  animation-delay: 0.3s;
+}
+
+@keyframes revealUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* 4. Project Card Enhanced Hover */
+.project {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Adds a lush light sweep effect on hover */
+.project::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.05),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.project:hover::before {
+  left: 150%;
+}
+
+/* 5. Button "Lift" logic already exists, let's make it smoother */
+.btn {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
